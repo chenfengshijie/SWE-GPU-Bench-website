@@ -1,0 +1,386 @@
+{
+  "title": "SWE-GPU-Bench: Can Language Models Solve Real-World GPU Software Engineering Tasks?",
+  "authors": [
+    "Feng Chen",
+    "Binbin Liu",
+    "Wenhan Han",
+    "Yin Zheng"
+  ],
+  "affiliation": "Independent Researcher",
+  "contact": "yzheng3xg@gmail.com",
+  "snapshotDate": "2026-11-06",
+  "sourceSha256": "4f15709bd38f38e1f00e8925ee0927ac477310a25da32cc37d610d393d05727f",
+  "paperTasks": 417,
+  "generalTasks": 378,
+  "perfTasks": 39,
+  "repositories": 30,
+  "resultStatus": "paper-reported",
+  "results": [
+    {
+      "model": "GPT-6-Astra",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 49.2,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-6.1-Sol",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 47.6,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5.6-Sol",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 38.5,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5.2",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 79.2,
+      "compile": 48.3,
+      "test": 26.0,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 24.3,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V4-Pro",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 21.4,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "Claude Sonnet 4",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 75.2,
+      "compile": 49.6,
+      "test": 20.8,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5-Codex",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 77.1,
+      "compile": 49.2,
+      "test": 20.4,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GLM-5",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 60.3,
+      "compile": 36.8,
+      "test": 17.2,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "Kimi K2.5",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 68.4,
+      "compile": 42.1,
+      "test": 14.4,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5.1-Codex",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 52.2,
+      "compile": 31.6,
+      "test": 12.9,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V3.1",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 51.7,
+      "compile": 36.4,
+      "test": 11.0,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V4-Flash",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 75.6,
+      "compile": 68.9,
+      "test": 8.6,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-R1",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 54.1,
+      "compile": 38.8,
+      "test": 8.6,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 41.6,
+      "compile": 25.8,
+      "test": 8.1,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "setting": "oracle",
+      "framework": "Single pass",
+      "patch": 19.1,
+      "compile": 10.5,
+      "test": 4.8,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-6-Astra",
+      "setting": "agent",
+      "framework": "Codex CLI",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 58.3,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-6.1-Sol",
+      "setting": "agent",
+      "framework": "Codex CLI",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 58.0,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5.6-Sol",
+      "setting": "agent",
+      "framework": "Codex CLI",
+      "patch": 98.0,
+      "compile": 98.0,
+      "test": 56.7,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5.5",
+      "setting": "agent",
+      "framework": "Codex CLI",
+      "patch": 100.0,
+      "compile": 95.2,
+      "test": 48.9,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5-Codex",
+      "setting": "agent",
+      "framework": "Codex CLI",
+      "patch": 85.0,
+      "compile": 47.0,
+      "test": 33.0,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5.1-Codex",
+      "setting": "agent",
+      "framework": "Codex CLI",
+      "patch": 74.7,
+      "compile": 57.8,
+      "test": 33.0,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "GPT-5 mini",
+      "setting": "agent",
+      "framework": "Codex CLI",
+      "patch": 87.8,
+      "compile": 56.7,
+      "test": 30.0,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "setting": "agent",
+      "framework": "OpenCode",
+      "patch": 100.0,
+      "compile": 100.0,
+      "test": 55.3,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V4-Pro",
+      "setting": "agent",
+      "framework": "OpenCode",
+      "patch": 94.0,
+      "compile": 94.0,
+      "test": 43.3,
+      "coverage": "current",
+      "denominator": 378,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V3.1",
+      "setting": "agent",
+      "framework": "OpenCode",
+      "patch": 85.1,
+      "compile": 58.5,
+      "test": 29.0,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "Kimi K2.5",
+      "setting": "agent",
+      "framework": "OpenCode",
+      "patch": 85.0,
+      "compile": 53.0,
+      "test": 27.0,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "setting": "agent",
+      "framework": "OpenCode",
+      "patch": 86.7,
+      "compile": 56.1,
+      "test": 26.5,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    },
+    {
+      "model": "DeepSeek-V4-Flash",
+      "setting": "agent",
+      "framework": "OpenCode",
+      "patch": 88.2,
+      "compile": 88.2,
+      "test": 26.3,
+      "coverage": "historical",
+      "denominator": null,
+      "source": "Paper, Table 2; Appendix B.1"
+    }
+  ],
+  "perfResults": [
+    {
+      "model": "Gold patch",
+      "patch": 39,
+      "compile": 39,
+      "test": 39,
+      "total": 39,
+      "gain": 6.4,
+      "source": "Paper, Table 3"
+    },
+    {
+      "model": "GPT-5.1-Codex (Codex)",
+      "patch": 39,
+      "compile": 15,
+      "test": 3,
+      "total": 39,
+      "gain": 3.3,
+      "source": "Paper, Table 3"
+    },
+    {
+      "model": "GPT-5-Codex (Codex)",
+      "patch": 39,
+      "compile": 10,
+      "test": 2,
+      "total": 39,
+      "gain": 2.4,
+      "source": "Paper, Table 3"
+    },
+    {
+      "model": "Kimi K2.5 (OpenCode)",
+      "patch": 35,
+      "compile": 8,
+      "test": 2,
+      "total": 39,
+      "gain": 3.3,
+      "source": "Paper, Table 3"
+    },
+    {
+      "model": "DeepSeek-V3.2 (OpenCode)",
+      "patch": 39,
+      "compile": 12,
+      "test": 1,
+      "total": 39,
+      "gain": 4.3,
+      "source": "Paper, Table 3"
+    }
+  ]
+}
