@@ -34,4 +34,10 @@ Only the five models explicitly identified by the paper as evaluated on the upda
 
 ## Attribution
 
-Original website implementation, with presentation references to [SWE-Perf](https://swe-perf.github.io/) and [SWE-bench](https://www.swebench.com/). Their logos, source code, and branding are not copied. Manuscript and figures belong to their respective authors; upstream dataset licensing is defined on Hugging Face.
+Original website implementation, with presentation references to [SWE-Perf](https://swe-perf.github.io/) and [SWE-bench](https://www.swebench.com/). The alpaca mascot is newly generated with SWE-Perf and SWE-bench as visual references, with an original GPU card, goggles, and wrench composition. Their source code and logo assets are not included. Manuscript and figures belong to their respective authors; upstream dataset licensing is defined on Hugging Face.
+
+## Visual identity
+
+The GPU alpaca mascot appears in the masthead, navigation, favicon, and link previews. Download the transparent original from `public/assets/gpu-llama.png`; the site uses a smaller WebP derivative. The masthead wordmark stays as selectable HTML text, so it scales cleanly and remains accessible. See `BRANDING.md` for the reference and generation brief. Local DM Sans and Space Grotesk fonts are bundled with their SIL Open Font Licenses; reading the page makes no third-party font requests.
+
+The result spotlight is computed from `data/results.json` for the selected Agent/Oracle setting on the current general set. It is unaffected by the table's search filter. Figures reserve their intrinsic dimensions to keep direct section and language links stable during loading. Tables scroll horizontally on small screens while the model column stays visible.
